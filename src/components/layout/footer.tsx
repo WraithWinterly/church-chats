@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Illustration from "~/assets/fintech/footer-illustration.svg";
+import logo from "~/assets/icon.png";
 
 export default function Footer() {
   return (
@@ -50,24 +51,13 @@ export default function Footer() {
           {/* 1st block */}
           <div className="sm:col-span-12 lg:col-span-2 lg:max-w-xs">
             {/* Logo */}
-            <Link className="block" href="/" aria-label="Cruip">
-              <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
-                <g fillRule="nonzero" fill="none">
-                  <g className="fill-blue-500" transform="translate(3 3)">
-                    <circle cx="5" cy="5" r="5" />
-                    <circle cx="19" cy="5" r="5" />
-                    <circle cx="5" cy="19" r="5" />
-                    <circle cx="19" cy="19" r="5" />
-                  </g>
-                  <g className="fill-sky-300">
-                    <circle cx="15" cy="5" r="5" />
-                    <circle cx="25" cy="15" r="5" />
-                    <circle cx="15" cy="25" r="5" />
-                    <circle cx="5" cy="15" r="5" />
-                  </g>
-                </g>
-              </svg>
-            </Link>
+            <Image
+              src={logo}
+              alt="Church chats logo"
+              width={256}
+              height={256}
+              className="w-10"
+            />
           </div>
 
           {/* 3rd block */}

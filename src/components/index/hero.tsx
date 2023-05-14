@@ -44,7 +44,7 @@ export default function Hero() {
               >
                 <div>
                   <Link
-                    className="btn-sm group inline-flex w-full items-center bg-slate-800 text-slate-100 shadow-sm hover:bg-slate-900"
+                    className="btn group inline-flex w-full items-center bg-slate-800 py-4 text-slate-100 shadow-sm hover:bg-slate-900"
                     href="/apply"
                   >
                     Join the waitlist
