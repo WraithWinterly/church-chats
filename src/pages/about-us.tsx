@@ -109,36 +109,36 @@ function Humans() {
           title="CEO & Co-founder & Sponsor"
           image={pfp1.src}
           description="A successful nonprofit director and events management professional with extensive experience in planning, implementing and leading local, diocesan, regional and national comprehensive youth and young adult programs for nonprofit organizations."
-          twitter=""
+          twitter="https://twitter.com/amcervant"
           github=""
-          linkedin=""
+          linkedin="https://www.linkedin.com/in/armando-cervantes-9b88199/"
         />
         <HumanCard
           name="Rocky Nguyen"
           title="CTO & Co-founder"
           image={pfp2.src}
           description="I've always felt blessed with the many gifts in my life, and so I'm focused on putting my skills to good use. This can mean volunteering with a non-profit project on the weekends or helping out in the local community."
-          twitter=""
-          github=""
-          linkedin=""
+          twitter="https://twitter.com/rockyntheblock"
+          github="https://github.com/rockynhatnguyen"
+          linkedin="https://www.linkedin.com/in/rockynhatnguyen/"
         />
         <HumanCard
           name="Ayden Springer"
           title="Lead Web Developer"
           image={pfp3.src}
           description="I'm a very hard working Full Stack Developer, and I enjoy using the power of technology to solve the world's problems."
-          twitter=""
-          github=""
-          linkedin=""
+          twitter="https://twitter.com/WraithWinterly"
+          github="https://github.com/WraithWinterly"
+          linkedin="https://www.linkedin.com/in/ayden-springer/"
         />
         <HumanCard
           name="Christina Vu"
           title="Lead UI/UX Designer"
           image={pfp4.src}
           description="I'm passionate about creating intuitive, user-friendly, and accessible interfaces. I love using my skills to make a positive impact on people's lives, and I am constantly seeking new challenges to improve as a designer!"
-          twitter=""
-          github=""
-          linkedin=""
+          twitter="https://twitter.com/designwithtinaa?s=09"
+          github="https://github.com/vucd1"
+          linkedin="https://www.linkedin.com/in/christina-d-vu/"
         />
       </div>
     </div>
@@ -176,16 +176,36 @@ function HumanCard({
         {title}
       </span>
       <span className="py-4 text-slate-700">{description}</span>
-      <div className="flex justify-center gap-4">
-        <Link href={twitter} className="hover:underline">
+      <div className="flex justify-center gap-3">
+        <Link
+          href={twitter}
+          className="hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Twitter
         </Link>
         <span>•</span>
-        <Link href={github} className="hover:underline">
-          Github
-        </Link>
-        <span>•</span>
-        <Link href={linkedin} className="hover:underline">
+        {github.length > 0 && (
+          <>
+            <Link
+              href={github}
+              className="hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </Link>
+            <span>•</span>
+          </>
+        )}
+
+        <Link
+          href={linkedin}
+          className="hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           LinkedIn
         </Link>
       </div>
