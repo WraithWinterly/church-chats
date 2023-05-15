@@ -1,6 +1,9 @@
-import Link from "next/link";
+import { useAppContext } from "../context/app-context";
 
 export default function Ready() {
+  const ctx = useAppContext();
+  const { setSidebarOpen } = ctx;
+
   return (
     <section>
       <div className="mx-auto my-32 max-w-6xl px-4 sm:px-6">
@@ -21,12 +24,12 @@ export default function Ready() {
               </div>
 
               {/* CTA button */}
-              <Link
+              <button
                 className="btn group inline-flex items-center bg-slate-800 py-4 text-slate-100 shadow-sm hover:bg-slate-900"
-                href="/apply"
+                onClick={() => setSidebarOpen(true)}
               >
                 Join the waitlist
-              </Link>
+              </button>
             </div>
           </div>
         </div>

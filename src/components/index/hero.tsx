@@ -1,9 +1,10 @@
-import Link from "next/link";
 import Image from "next/image";
-import Illustration from "~/assets/fintech/hero-illustration.svg";
-import HeroImage from "~/assets/fintech/hero-image.png";
+import { useAppContext } from "../context/app-context";
+import chatExample from "~/assets/chat-example.png";
 
 export default function Hero() {
+  const ctx = useAppContext();
+  const { setSidebarOpen } = ctx;
   return (
     <section className="relative">
       {/* Bg */}
@@ -43,9 +44,9 @@ export default function Hero() {
                 data-aos-delay="300"
               >
                 <div>
-                  <Link
+                  <button
                     className="btn group inline-flex w-full items-center bg-slate-800 py-4 text-slate-100 shadow-sm hover:bg-slate-900"
-                    href="/apply"
+                    onClick={() => setSidebarOpen(true)}
                   >
                     Join the waitlist
                     <span className="ml-2 tracking-normal text-white transition-transform duration-150 ease-in-out group-hover:translate-x-0.5">
@@ -58,7 +59,7 @@ export default function Hero() {
                         <path d="M1 6.002h7.586L6.293 8.295a1 1 0 1 0 1.414 1.414l4-4a1 1 0 0 0 0-1.416l-4-4a1 1 0 0 0-1.414 1.416l2.293 2.293H1a1 1 0 1 0 0 2Z" />
                       </svg>
                     </span>
-                  </Link>
+                  </button>
                 </div>
               </div>
             </div>
@@ -66,15 +67,15 @@ export default function Hero() {
             {/* Image */}
             <div className="mx-auto -mb-12 max-w-sm md:absolute md:left-[600px] md:top-0 md:-mt-12 md:mb-0 md:max-w-none">
               <div className="relative -ml-3 -mr-24 md:mx-0">
-                <Image
+                {/* <Image
                   className="pointer-events-none absolute left-1/2 top-1/2 -z-10 mt-16 max-w-none -translate-x-1/2 -translate-y-1/2 mix-blend-lighten md:mt-0"
                   src={Illustration as string}
                   priority
                   alt="Hero illustration"
                   aria-hidden="true"
-                />
+                /> */}
                 <Image
-                  src={HeroImage}
+                  src={chatExample.src}
                   className="md:max-w-none"
                   width="548"
                   height="545"

@@ -1,20 +1,22 @@
-import Link from "next/link";
 import Image from "next/image";
-import Illustration from "~/assets/fintech/footer-illustration.svg";
 import logo from "~/assets/icon.png";
+import { useAppContext } from "../context/app-context";
 
 export default function Footer() {
+  const ctx = useAppContext();
+  const { setSidebarOpen } = ctx;
+
   return (
     <footer className="relative w-full overflow-hidden bg-primary-3">
-      <div className="flex w-full flex-col items-center justify-between gap-12 px-6 py-24 text-center md:flex-row md:gap-0 md:text-start xl:px-32">
+      <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-12 px-6 py-24 text-center md:flex-row md:gap-0 md:text-start">
         <h1 className="text-bold text-5xl text-white">
           Join the waitlist for{" "}
           <span className="text-primary-2"> Church Chats </span>
         </h1>
         <div>
-          <Link
-            className="btn group inline-flex w-full items-center bg-slate-100 text-black shadow-sm hover:bg-slate-900"
-            href="/apply"
+          <button
+            className="btn group inline-flex w-full items-center bg-slate-200 text-black shadow-sm hover:bg-slate-100"
+            onClick={() => setSidebarOpen(true)}
           >
             Join the waitlist
             <span className="ml-2 tracking-normal text-black transition-transform duration-150 ease-in-out group-hover:translate-x-0.5">
@@ -27,7 +29,7 @@ export default function Footer() {
                 <path d="M1 6.002h7.586L6.293 8.295a1 1 0 1 0 1.414 1.414l4-4a1 1 0 0 0 0-1.416l-4-4a1 1 0 0 0-1.414 1.416l2.293 2.293H1a1 1 0 1 0 0 2Z" />
               </svg>
             </span>
-          </Link>
+          </button>
         </div>
       </div>
 
@@ -36,13 +38,13 @@ export default function Footer() {
         className="pointer-events-none absolute -right-80 bottom-0 overflow-hidden"
         aria-hidden="true"
       >
-        <Image
+        {/* <Image
           className=""
           src={Illustration as string}
           // width={Illustration.width}
           // height={Illustration.height}
           alt="Footer illustration"
-        />
+        /> */}
       </div>
 
       <div className="mx-auto max-w-6xl px-4 sm:px-6">

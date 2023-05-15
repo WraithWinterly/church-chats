@@ -6,6 +6,7 @@ import { type AppType } from "next/app";
 
 import "~/styles/globals.css";
 import Layout from "~/components/layout/layout";
+import { AppContext } from "~/components/context/app-context";
 
 // When we are ready to add server features, we can uncomment the SessionProvider and api.withTRPC lines
 
@@ -17,9 +18,11 @@ const MyApp: AppType = ({
 }) => {
   return (
     // <SessionProvider session={session}>
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <AppContext>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </AppContext>
 
     // </SessionProvider>
   );

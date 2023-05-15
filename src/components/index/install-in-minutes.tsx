@@ -4,7 +4,7 @@ export default function InstallInMinutes() {
       <div className="relative">
         {/* Bg */}
         <div
-          className="pointer-events-none absolute inset-0 -z-10 rounded-tr-[100px] bg-gradient-to-tr from-blue-900 to-black"
+          className="pointer-events-none absolute inset-0 -z-10 rounded-tr-[100px] bg-gradient-to-tr from-primary-3 to-[#102216]"
           aria-hidden="true"
         />
 
@@ -41,14 +41,16 @@ export default function InstallInMinutes() {
                   <Image src={Logos} width={720} height={283} alt="Logos" />
                 </div>
               </div> */}
-              <h2 className="mb-8 text-center text-5xl font-bold text-white">
-                89%
-              </h2>
-              <div className="mx-auto mb-12 h-6 w-full max-w-4xl rounded-full bg-gray-200 dark:bg-gray-700">
-                <div
-                  className="h-6 rounded-full bg-white"
-                  style={{ width: "89%" }}
-                ></div>
+              <div data-aos="flip-up">
+                <h2 className="mb-8 text-center text-5xl font-bold text-white">
+                  89%
+                </h2>
+                <div className="mx-auto mb-12 h-6 w-full max-w-4xl rounded-full bg-gray-200 dark:bg-gray-700">
+                  <div
+                    className="h-6 rounded-full bg-white"
+                    style={{ width: "89%" }}
+                  ></div>
+                </div>
               </div>
 
               {/* Items */}
@@ -60,49 +62,46 @@ export default function InstallInMinutes() {
                 {/* 1st item */}
                 <div className="relative after:absolute after:right-0 after:top-1/2 after:hidden after:h-16 after:w-px after:-translate-y-1/2 after:bg-blue-400 last:after:hidden md:px-9 md:after:block">
                   <div className="mb-3">
-                    <div className="flex h-11 w-11 items-center justify-center rounded-full bg-teal-200 font-bold text-teal-600">
+                    <div className="flex h-11 w-11 items-center justify-center rounded-full bg-primary-2 font-bold text-black">
                       1
                     </div>
                   </div>
                   <h4 className="mb-1 text-xl font-bold text-white">
-                    Download the app
+                    Find the code snippet
                   </h4>
-                  <p className="text-blue-200">
-                    Create cards that work exactly as you configured them. Make
-                    real-time decisions on charges and spendings.
+                  <p className="text-gray-200">
+                    View the code snippet for the chatbot installation.
                   </p>
                 </div>
 
                 {/* 2nd item */}
                 <div className="relative after:absolute after:right-0 after:top-1/2 after:hidden after:h-16 after:w-px after:-translate-y-1/2 after:bg-blue-400 last:after:hidden md:px-9 md:after:block">
                   <div className="mb-3">
-                    <div className="flex h-11 w-11 items-center justify-center rounded-full bg-teal-200 font-bold text-teal-600">
+                    <div className="flex h-11 w-11 items-center justify-center rounded-full bg-primary-2 font-bold text-black">
                       2
                     </div>
                   </div>
                   <h4 className="mb-1 text-xl font-bold text-white">
-                    Request your card
+                    Copy & paste
                   </h4>
-                  <p className="text-blue-200">
-                    Create cards that work exactly as you configured them. Make
-                    real-time decisions on charges and spendings.
+                  <p className="text-gray-200">
+                    Copy the code snippet and paste it before the closing
+                    &lt;/body&gt; tag on every page you want the widget to
+                    appear.
                   </p>
                 </div>
 
                 {/* 3rd item */}
-                <div className="relative after:absolute after:right-0 after:top-1/2 after:hidden after:h-16 after:w-px after:-translate-y-1/2 after:bg-blue-400 last:after:hidden md:px-9 md:after:block">
+                <div className="relative after:absolute after:right-0 after:top-1/2 after:hidden after:h-16 after:w-px after:-translate-y-1/2 after:bg-primary-2 last:after:hidden md:px-9 md:after:block">
                   <div className="mb-3">
-                    <div className="flex h-11 w-11 items-center justify-center rounded-full bg-teal-200 font-bold text-teal-600">
+                    <div className="flex h-11 w-11 items-center justify-center rounded-full bg-primary-2 font-bold text-black">
                       3
                     </div>
                   </div>
                   <h4 className="mb-1 text-xl font-bold text-white">
-                    Connect all your account
+                    Deploy your website
                   </h4>
-                  <p className="text-blue-200">
-                    Create cards that work exactly as you configured them. Make
-                    real-time decisions on charges and spendings.
-                  </p>
+                  <p className="text-gray-200">And you're all set to go!</p>
                 </div>
               </div>
             </div>
