@@ -23,11 +23,11 @@ function Hero() {
     <section className="relative">
       {/* Bg */}
       <div
-        className="pointer-events-none absolute inset-0 -z-10 mb-28 h-[400px] rounded-bl-[100px] bg-gradient-to-tr from-primary-1 to-secondary md:mb-0 md:h-auto"
+        className="pointer-events-none absolute inset-0 -z-10 mb-28 h-[480px] rounded-bl-[100px] bg-gradient-to-tr from-primary-1 to-secondary md:mb-0 md:h-auto"
         aria-hidden="true"
       />
 
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <div className="mx-auto max-w-6xl px-6">
         <div className="pt-36 md:pb-20 md:pt-40">
           {/* Hero content */}
           <div className="relative mx-auto max-w-xl text-center md:max-w-none md:text-left">

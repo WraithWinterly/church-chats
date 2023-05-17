@@ -47,7 +47,7 @@ export default function HowItWorks() {
               How
               <span className="bg-gradient-to-r from-primary-1 to-secondary bg-clip-text text-transparent">
                 {" "}
-                Church Chat{" "}
+                Church Chats{" "}
               </span>
               Works
             </h1>

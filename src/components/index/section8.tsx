@@ -4,10 +4,10 @@ import { useId } from "react";
 interface Section8Props {
   imgs: [string, string, string, string];
   texts: [
-    [string, string],
-    [string, string],
-    [string, string],
-    [string, string]
+    [JSX.Element | string, JSX.Element | string],
+    [JSX.Element | string, JSX.Element | string],
+    [JSX.Element | string, JSX.Element | string],
+    [JSX.Element | string, JSX.Element | string]
   ];
 }
 

@@ -159,21 +159,7 @@ export default function Footer() {
 
         {/* Bottom area */}
         <div className="pb-4 md:pb-8">
-          <div className="text-xs text-slate-500">
-            If you would like to find out more about which entity you receive
-            services from please click{" "}
-            <a
-              className="font-medium underline transition duration-150 ease-in-out hover:text-blue-500"
-              href="#0"
-            >
-              here
-            </a>{" "}
-            If you have any other questions, please reach out to us via the
-            in-app chat. Custom Bank is a bank established in the Republic of
-            Ireland. Custom Bank is licensed by the European Central Bank and
-            regulated by the Bank of Ireland. Cusom Bank provides credit,
-            payment, current account and demand deposit account services.
-          </div>
+          <div className="text-xs text-slate-500"></div>
         </div>
       </div>
     </footer>
