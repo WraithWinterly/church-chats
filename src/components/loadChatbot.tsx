@@ -1,6 +1,21 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useEffect } from 'react';
+
+declare global {
+  interface Window {
+    voiceflow: {
+      chat: {
+        load: (options: {
+          verify: { projectID: string },
+          url: string,
+          versionID: string
+        }) => void;
+      };
+    };
+  }
+}
 
 function loadChatbot(): void {
   useEffect(() => {
@@ -14,7 +29,9 @@ function loadChatbot(): void {
     };
     script.src = 'https://cdn.voiceflow.com/widget/bundle.mjs';
     script.type = 'text/javascript';
-    document.getElementsByTagName('head')[0].appendChild(script);
+    
+    const headElement: HTMLElement | null = document.getElementsByTagName('head')[0]!;
+    headElement.appendChild(script);
   }, []);
 }
 
