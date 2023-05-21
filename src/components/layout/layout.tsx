@@ -8,7 +8,11 @@ import "aos/dist/aos.css";
 import ModalWaitlist from "../modal-waitlist";
 import { useAppContext } from "../context/app-context";
 
+import loadChatbot from "../loadChatbot";
+
 export default function Layout({ children }: { children: ReactNode }) {
+  loadChatbot();
+
   useEffect(() => {
     AOS.init({
       once: true,
