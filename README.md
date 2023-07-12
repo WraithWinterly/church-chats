@@ -1,28 +1,16 @@
-# Create T3 App
+# Welcome to Church Chats
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+Church Chats was created for [Armando Cervantes](https://www.linkedin.com/in/armando-cervantes-9b88199/), director of catholic churches in Orange County.
 
-## What's next? How do I make an app with this?
+## Learn About Church Chats
+[![Church chats ideo](https://img.youtube.com/vi/0wf1tmnl57Y/0.jpg)](https://www.youtube.com/watch?v=0wf1tmnl57Y)
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+Church Chats is a new service for churches, originally designed for Catholic churches in Orange Country, California. It automatically answers common questions for people who need assistance from the church. It gives useful information to church members about hours, events, and more! If the chatbot can't answer a question, it will connect the person to a real person who can help. Church Chats is easy to put on any church website and is much cheaper than using traditional phone operators. We want to help the people who attend churches.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## Get it Running
 
-## Learn More
-
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
-
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
-
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+- Clone the respository
+- Run `npm i` to install dependencies.
+- Run `npm run dev` to run the development server.
+- For a custom voiceflow configuration, look into `loadChatBox.tsx`.
